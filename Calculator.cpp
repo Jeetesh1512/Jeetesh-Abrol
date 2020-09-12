@@ -26,7 +26,7 @@ int main()
             cout<<"The difference is: "<<result<<endl;
         }
         else if(op=='*'){
-            result=num1-num2;
+            result=num1*num2;
             cout<<"The product is: "<<result<<endl;
         }
         else if(op=='/'){
