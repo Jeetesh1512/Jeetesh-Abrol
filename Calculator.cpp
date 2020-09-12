@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
     float num1,num2,x,y,result;
-    int i=0,j,f;
+    int j,f,z;
     char op;
-    for(i=0;i<5000;++i){
-    cout<<"\n\nWhat do you Want to do\n1 - Simple calculation\n2 - Trigonometric Calculation\n";
+    while(j!=0){
+    cout<<"\n\nWhat do you Want to do\n1 - Simple calculation\n2 - Trigonometric Calculation\n3 - others\n0 - exit\n";
     cin>>j;
     if(j==1){
         cout<<"Enter the first number: ";
@@ -34,12 +34,13 @@ int main()
             cout<<"The Quotient is: "<<result<<endl;
         }
         else cout<<"The operator entered is in valid!!!!!";
+        break;
     }
     else if(j==2){
         cout<<"Enter the angle in degrees: ";
         cin>>x;
         y=x*(3.14159/180);
-        cout<<"\nEnter the trigonometric function\n1-- Sin\n2--cosine\n3--tan\n4--cosec\n5--sec\n6--cot \n";
+        cout<<"\nEnter the trigonometric function\n1--Sin\n2--cosine\n3--tan\n4--cosec\n5--sec\n6--cot \n";
         cin>>f;
 
         if(f==1){
@@ -61,6 +62,36 @@ int main()
             cout<<"The Cotangent is: "<<fixed<<setprecision(5)<<(1/(tan(y)));
         }
         else cout<<"The operator is in valid!!!!";
+        break;
+    }
+    if(j==3){
+        cout<<"Select the function\n1--Log10\n2--power\n3--Greatest Integer\n4--Fractional part function\n";
+        cin>>z;
+        if(z==1){
+            cout<<"Enter the number: ";
+            cin>>x;
+            cout<<"Log of "<<x<<" is "<<log10(x);
+        }
+        else if (z==2){
+            cout<<"Enter the base: ";
+            cin>>x;
+            cout<<"Enter the power: ";
+            cin>>y;
+            cout<<pow(x,y);
+        }
+        else if(z==3){
+            cout<<"Enter the number: ";
+            cin>>x;
+            cout<<floor(x);
+        }
+        else if(z==4)
+        {
+            cout<<"Enter the number: ";
+            cin>>x;
+            cout<<x-floor(x);
+        }
+        else cout<<"Operator invalid!!!!";
+        break;
     }
     }
 }
