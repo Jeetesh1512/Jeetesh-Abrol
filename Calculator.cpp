@@ -48,17 +48,17 @@ int main()
         else if (f==2){
             cout<<"The cosine is: "<<fixed<<setprecision(5)<<(cos(y))<<endl;
         }
-        else if (f==2){
-            cout<<fixed<<setprecision(5)<<tan(y);
+        else if (f==3){
+            cout<<"The tangent is: "<<fixed<<setprecision(5)<<tan(y);
         }
         else if (f==4){
-            cout<<fixed<<setprecision(5)<<(1/(sin(y)));
+            cout<<"The Cosecant is: "<<fixed<<setprecision(5)<<(1/(sin(y)));
         }
         else if (f==5){
-            cout<<fixed<<setprecision(5)<<(1/(cos(y)));
+            cout<<"The Secant is: "<<fixed<<setprecision(5)<<(1/(cos(y)));
         }
         else if(f==6){
-            cout<<fixed<<setprecision(5)<<(1/(tan(y)));
+            cout<<"The Cotangent is: "<<fixed<<setprecision(5)<<(1/(tan(y)));
         }
         else cout<<"The operator is in valid!!!!";
     }
