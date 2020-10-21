@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float avg,sum=0.0,num[100];
+    int n,i;
+
+    cout<<"Enter the number of data you have (1-100): ";
+    cin>>n;
+
+    while (n>100 || n<=0)
+    {
+        cout<<"This much data is out of range!! ";
+        cout<<"Enter again the data in range: ";
+        cin>>n;
+    }
+    
+    for (i=0;i<n;++i)
+    {
+        cout<<i+1<<". Enter the number: ";
+        cin>>num[i];
+        sum=sum+num[i];
+    }
+
+    avg=sum/n;
+    cout<<"The average = "<<avg<<endl;
+
+    return 0;
+}
